@@ -1,0 +1,27 @@
+
+
+    <div class="row">
+               <ng-container *ngFor= "let p of Videos$ | async; let i = index">
+                 <div class="col">
+                     
+                    <div class="card" style="width:15rem;">
+                        <img class="card-img-top" [src]="p.payload.val().imageUrl" alt="card img">
+                           <div class="card-body">
+                            <h5 class="card-title">{{p.payload.val().title}}</h5>
+                            <p class="card-text">{{ p.payload.val().description }}</p> 
+
+                            <a 
+                            [routerLink]= "['/video/', p.key]"
+                             class="btn btn-secondary btn-block">
+                             VIEW</a>       
+                           </div> 
+                        </div> 
+                           
+                 </div>
+                   <div *ngIf= "(i + 1) % 2 === 0 " class="w-100"></div>
+               </ng-container>
+             </div>
+             
+
+             <!--  -->
+             

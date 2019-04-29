@@ -1,0 +1,11 @@
+
+.dropdown-toggle,.log{
+    cursor:pointer;
+   }
+
+   .dropdown{
+       left: 57rem;
+   }
+   .navbar{
+       margin-bottom: 2rem;
+   }

@@ -1,0 +1,22 @@
+
+<div class="row">
+  <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        </div>>
+
+        <!-- <youtube-player
+          [videoId]="p.videoUrl"
+          (ready)="savePlayer($event)"
+          (change)="onStateChange($event)"
+          [playerVars]="playerVars">
+        </youtube-player> -->
+  </div>
+  <div class="col-md-6">
+    <h3>{{video.title}}</h3>
+    <br>
+    <h5>{{video.description}}</h5>
+    <br>
+    <a routerLink="/" class="btn btn-outline-secondary"> <-back to library</a> 
+  </div>
+</div>
